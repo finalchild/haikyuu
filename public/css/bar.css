@@ -1,0 +1,25 @@
+.top_bar, .left_bar, .right_bar, .bottom_bar {
+    position: fixed;
+    background-color: white;
+    z-index: 1000;
+}
+
+.top_bar, .bottom_bar{
+    width: 100%;
+    height: 5px;
+}
+
+.left_bar, .right_bar{
+    width: 5px;
+    height: 100%;
+}
+
+.top_bar, .left_bar {
+    top: 0px;
+    left: 0px;
+}
+
+.right_bar, .bottom_bar {
+    right: 0px;
+    bottom: 0px;
+}

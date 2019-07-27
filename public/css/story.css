@@ -1,0 +1,124 @@
+html, body, #main_container  {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.season_container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.story_video {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: 100;
+}
+
+.content_container {
+    position: absolute;
+    top: 240px;
+    left: 10%;
+    z-index: 200;
+}
+
+#topic, #topic_shadow, #description {
+    margin: 0px;
+} 
+
+#topic, #description {
+    color: white;
+}
+
+#topic {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+#topic_shadow {
+    color: black;
+    opacity: 0.6;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+#description {
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0.95;
+}
+
+#arrow_container {
+    position: fixed;
+    top: 240px;
+    right: 10%;
+    z-index: 200;
+}
+
+#prev_arrow,
+#next_arrow {
+    display: block;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#prev_arrow {
+    border-top: 4px  white solid;
+    border-left: 4px  white solid;
+}
+
+#next_arrow {
+    border-right: 4px  white solid;
+    border-bottom: 4px  white solid;
+}
+
+#current_season_shower {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    transform: translateX(-30%);
+}
+
+#vertical_divider,
+#season_number,
+#season_length {
+    display: inline-block;
+}
+
+#season_number{
+    font-size: 96px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+}
+
+#season_length{
+    color: white;
+    font-size: 32px;
+}
+
+#vertical_divider{
+    width: 3px;
+    height: 24px;
+    margin-right: 16px;
+    margin-left: 16px;
+    background-color: white;
+}
+
+#back_key {
+    position: fixed;
+    top: 60px;
+    left: 10%;
+    z-index: 200;
+    cursor: pointer;
+    font-size: 36px;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+}
+
