@@ -22,6 +22,7 @@ a {
     color: transparent;
     letter-spacing: 4px;
     -webkit-text-stroke: 1px black;
+    transition: color 0.1s linear 0.05s;
 }
 
 .menu_text:hover {

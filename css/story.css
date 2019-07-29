@@ -1,124 +1,102 @@
-html, body, #main_container  {
-    width: 100%;
-    height: 100%;
+* { font-family: spoqa;}
+
+@font-face {
+    font-family: spoqa;
+    src: url('../font/Spoqa\ Han\ Sans\ Regular.ttf') format('truetype');
+}
+
+body {
     margin: 0px;
 }
 
-.season_container{
+#main_container{
+    display: flex;
+    width: calc(100vw * 3);
+    max-width: calc(100vw * 3);
+    height: 100vh;
+    max-height: 100vh;
+    margin: 0px;
+    transition: all 0.63s ease;
+}
+
+.season_container, .gradient{
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.gradient {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+    z-index: 200;
 }
 
 .story_video {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    min-width: 100%; 
+    width: 100%;
+    max-width: 100%;
     min-height: 100%;
-    z-index: 100;
+    object-fit: cover;
+    z-index: -100;
+}
+
+.content_container, .next, .home {
+    position: absolute;
+    bottom: 90px;
+    z-index: 300; 
 }
 
 .content_container {
-    position: absolute;
-    top: 240px;
-    left: 10%;
-    z-index: 200;
+    left: 80px;
 }
 
-#topic, #topic_shadow, #description {
+.topic, .description, .next, .home{
     margin: 0px;
-} 
-
-#topic, #description {
     color: white;
+    font-weight: 100;
+    /* opacity: 0; */
 }
 
-#topic {
-    font-size: 48px;
-    font-weight: 900;
-}
-
-#topic_shadow {
-    color: black;
-    opacity: 0.6;
-    font-size: 24px;
-    font-weight: 900;
-}
-
-#description {
-    font-size: 24px;
-    font-weight: 600;
-    opacity: 0.95;
-}
-
-#arrow_container {
-    position: fixed;
-    top: 240px;
-    right: 10%;
-    z-index: 200;
-}
-
-#prev_arrow,
-#next_arrow {
-    display: block;
-    width: 30px;
-    height: 30px;
-    transform: rotate(45deg);
-    opacity: 0.7;
+.next, .home {
+    right: 90px;
     cursor: pointer;
 }
 
-#prev_arrow {
-    border-top: 4px  white solid;
-    border-left: 4px  white solid;
+.topic {
+    font-size: 24px;
 }
 
-#next_arrow {
-    border-right: 4px  white solid;
-    border-bottom: 4px  white solid;
+.description {
+    margin-left: 10px;
+    font-size: 16px;
 }
 
-#current_season_shower {
-    margin-top: 48px;
-    margin-bottom: 48px;
-    transform: translateX(-30%);
+p {
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
-#vertical_divider,
-#season_number,
-#season_length {
-    display: inline-block;
+.back_progress {
+    position: absolute;
+    left: 90px;
+    right: 90px;
+    bottom: 53.5px;
+    background-color: rgba(255,255,255,0.5);
+    z-index: 300;
 }
 
-#season_number{
-    font-size: 96px;
-    font-weight: 900;
-    color: transparent;
-    -webkit-text-stroke: 3px white;
+.front_progress {
+    width: 0px;
+    height: 3px;
+    background-color:white;
+    opacity: 1;
+    z-index: 400;
 }
 
-#season_length{
-    color: white;
-    font-size: 32px;
+.fade_out{
+    opacity: 1;
 }
-
-#vertical_divider{
-    width: 3px;
-    height: 24px;
-    margin-right: 16px;
-    margin-left: 16px;
-    background-color: white;
-}
-
-#back_key {
-    position: fixed;
-    top: 60px;
-    left: 10%;
-    z-index: 200;
-    cursor: pointer;
-    font-size: 36px;
-    color: transparent;
-    -webkit-text-stroke: 3px white;
-}
-

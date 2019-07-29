@@ -6,11 +6,11 @@
 
 .top_bar, .bottom_bar{
     width: 100%;
-    height: 5px;
+    height: 10px;
 }
 
 .left_bar, .right_bar{
-    width: 5px;
+    width: 10px;
     height: 100%;
 }
 
