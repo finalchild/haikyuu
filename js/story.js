@@ -63,8 +63,8 @@ function fadeOut() {
     console.log(`#season${isNextClicked + 1} 사라지기`);
     $(`#season${isNextClicked + 1}_topic`).fadeOut(500);
     $(`#season${isNextClicked + 1}_description`).fadeOut(1000);
-    $(`#season${isNextClicked + 1}_next`).fadeOut(1500);
-    $(`#season${isNextClicked + 1}_progress`).fadeOut(2000);
+    $(`#season${isNextClicked + 1}_next`).fadeOut(1000);
+    $(`#season${isNextClicked + 1}_progress`).fadeOut(1500);
 }
 
 function playVideo() {

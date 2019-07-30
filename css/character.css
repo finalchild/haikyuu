@@ -1,0 +1,143 @@
+@font-face {
+    font-family: spoqa;
+    src: url('../font/Spoqa\ Han\ Sans\ Regular.ttf') format('truetype');
+}
+
+* { font-family: spoqa;}
+
+body {
+    margin: 0px;
+}
+
+#image_container {
+    position: absolute;
+    width: 100vw;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    margin-top: -125px;
+    margin-left: -50vw;
+    text-align: center;
+    background-color: rgb(53, 57, 72);
+    z-index: 100;
+}
+
+#yellow_box {
+    position: absolute;
+    top: 0px;
+    width: 320.5px;
+    height: 100%;
+    background-color: rgb(239, 137, 71);
+    transition: left 1s;
+}
+
+.character_image {
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 450px;
+    transform: translateY(-390px);
+    cursor: pointer;
+}
+
+.selected {
+    height: 750px;
+    transform: translateY(-150px);
+}
+
+#info_container{
+    position: absolute;
+    width: 100vw;
+    top: 70%;
+    z-index: 200;
+}
+
+#name_wrapper {
+    display: flex;
+}
+
+#name_head {
+    width: 20px;
+    height: 60px;
+    background-color: rgb(239, 137, 71);
+}
+
+#name_body {
+    position: relative;
+    width: 400px;
+    height: 60px;
+    background-color: rgb(53, 57, 72);
+    margin: 0px;
+    margin-left: 8px;
+    padding-left: 20px;
+}
+
+#name {
+    position: absolute;
+    top: 50%;
+    margin: 0px;
+    font-size: 32px;
+    color: white;
+    transform: translateY(-50%);
+}
+
+#desc_container {
+    display: flex;
+    margin-top: 8px;
+}
+
+#desc_head {
+    width: 20px;
+    height: 240px;
+    background-color: rgb(53, 57, 72);
+}
+
+#desc_body {
+    width: 700px;
+    margin-left: 8px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 2px 16px 0px  rgba(0, 0, 45, 0.1);
+}
+
+#desc_phrase {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#desc_story {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#desc_state {
+    font-size: 16px;
+}
+
+#desc_img {
+    margin-left: 8px;
+    height: 240px;
+    box-shadow: 0px 2px 16px 0px  rgba(0, 0, 45, 0.1);
+}
+
+#desc_link {
+    position: relative;
+    flex: 1;
+    margin-left: 8px;
+    background-color: rgb(53, 57, 72);
+}
+
+#desc_link h3{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 40px;
+    color: white;
+}
+
+#desc_link h3 img {
+    width: 30px;
+    transform: translateY(4px);
+}

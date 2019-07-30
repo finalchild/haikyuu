@@ -59,12 +59,12 @@ body {
     margin: 0px;
     color: white;
     font-weight: 100;
-    /* opacity: 0; */
 }
 
 .next, .home {
     right: 90px;
     cursor: pointer;
+    font-size: 24px;
 }
 
 .topic {
@@ -78,7 +78,8 @@ body {
 
 p {
     margin-top: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 0px;
+    line-height: 32px;
 }
 
 .back_progress {
